@@ -2,4 +2,6 @@ pipeline:
   build:
     image: gmacario/build-yocto
     commands:
-      - ls
+      - cd poky
+      - source oe-init-build-env
+      - time bitbake core-image-sato
