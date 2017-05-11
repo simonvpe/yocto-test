@@ -1,0 +1,5 @@
+pipeline:
+  build:
+    image: gmacario/build-yocto
+    commands:
+      - ls
